@@ -27,6 +27,6 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
           SC3_SENDKEY: ${{ secrets.SC3_SENDKEY }}
           SC3_UID: ${{ secrets.SC3_UID }}
-          EXIT_WHEN_FAIL: ${{ vars.EXIT_WHEN_FAIL }}
+          EXIT_WHEN_FAIL: 'on'
         run: |
           python src/main.py
